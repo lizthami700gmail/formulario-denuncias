@@ -8,7 +8,7 @@
   $correo= $_POST["correo"];
   $telefono= $_POST["telefono"];
   $mensaje= $_POST["mensaje"];
-  $contenido = "Nombre: " . $nombre . "Curp: " . $curp . "Domicilio: " . $domicilio . "Localidad: " . $localidad . "Municipio: " . $municipio . "\nCorreo:" . $correo . "\nTelefono:" . $telefono . "\nMensaje:" . $mensaje;
+  $contenido = "Nombre: " . $nombre . "\nCurp: " . $curp . "\nDomicilio: " . $domicilio . "\nLocalidad: " . $localidad . "\nMunicipio: " . $municipio . "\nCorreo:" . $correo . "\nTelefono:" . $telefono . "\nMensaje:" . $mensaje;
   mail($destino,"Denuncia", $contenido);
-  header("Location:index.html");
+  header("Location:gacias.html");
 ?>
